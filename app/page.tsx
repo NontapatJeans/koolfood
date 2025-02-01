@@ -19,20 +19,24 @@ export default function Home() {
       </header>
 
       {/* Search Bar */}
-      <div className="w-3/4 bg-black text-white px-6 py-4 flex items-center justify-between rounded-full shadow-md mt-6">
-        <div className="flex space-x-6 text-lg">
-          <button className="text-white font-medium hover:underline">วันที่</button>
-          <button className="text-white font-medium hover:underline">จำนวนคน</button>
-          <button className="text-white font-medium hover:underline">ประเภทอาหาร</button>
+      <div className="w-full bg-black text-white px-6 py-3 flex items-center justify-between shadow-md mt-6">
+        <div className="flex space-x-6 text-lg items-center">
+          <button className="text-white font-medium">วันที่</button>
+          <span className="text-white">|</span>
+          <button className="text-white font-medium">จำนวนคน</button>
+          <span className="text-white">|</span>
+          <button className="text-white font-medium">ประเภทอาหาร</button>
+          <span className="text-white">|</span>
         </div>
-        <div className="flex flex-1 items-center bg-gray-700 rounded-full overflow-hidden mx-4">
+        <div className="flex flex-1 items-center bg-gray-300 rounded-full overflow-hidden mx-4">
           <input
             type="text"
             placeholder="ค้นหาร้านอาหาร"
-            className="w-full px-4 py-3 bg-gray-700 text-white placeholder-gray-400 focus:outline-none" 
+            className="w-full px-4 py-2 bg-gray-300 text-gray-600 placeholder-gray-500 focus:outline-none"
+            disabled
           />
         </div>
-        <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-3 rounded-full text-lg shadow-md transition duration-300">
+        <button className="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-full text-lg shadow-md transition duration-300">
           ค้นหาเลย!
         </button>
       </div>
