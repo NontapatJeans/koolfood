@@ -2,20 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Global Styles */
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-gray-100 text-gray-900;
+}
+
+/* Input Field Styling */
+.input-field {
+  @apply border border-gray-300 p-3 mt-3 w-80 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500;
+}
+
+/* Button Styling */
+.btn-primary {
+  @apply bg-red-500 text-white px-6 py-3 mt-4 rounded-lg shadow-md hover:bg-red-600 transition-all duration-300;
+}
+
+/* Forgot Password & Register Link */
+.text-link {
+  @apply mt-2 text-red-500 cursor-pointer hover:underline;
+}
+
+/* Wrapper */
+.auth-container {
+  @apply flex flex-col items-center justify-center min-h-screen bg-gray-100;
 }
