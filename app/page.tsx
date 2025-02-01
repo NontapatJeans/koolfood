@@ -68,6 +68,38 @@ export default function Home() {
           ))}
         </div>
       </section>
+       {/* Footer */}
+        <footer className="w-full bg-black text-white py-10 mt-auto flex flex-col items-center">
+        <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+          <div className="flex flex-col items-center md:items-start">
+            <Image src="/kool_food_logo_1.png" alt="Kool Food Logo" width={120} height={120} />
+          </div>
+          <div className="flex flex-col space-y-4">
+            <h3 className="font-semibold">เกี่ยวกับ KOOL FOOD</h3>
+            <ul className="text-gray-400 space-y-2">
+              <li>เกี่ยวกับเรา</li>
+              <li>บล็อก</li>
+              <li>เข้าร่วมกับเรา</li>
+            </ul>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <h3 className="font-semibold">นโยบายแพลตฟอร์ม</h3>
+            <ul className="text-gray-400 space-y-2">
+              <li>ข้อกำหนดการให้บริการ</li>
+              <li>นโยบายความเป็นส่วนตัว</li>
+              <li>นโยบายผู้ใช้ที่เป็นธรรม</li>
+            </ul>
+          </div>
+          <div className="flex flex-col space-y-4">
+            <h3 className="font-semibold">สนับสนุน</h3>
+            <ul className="text-gray-400 space-y-2">
+              <li>ติดต่อเรา</li>
+              <li>คำถามที่พบบ่อย</li>
+            </ul>
+          </div>
+        </div>
+        <div className="text-center text-gray-400 mt-6 border-t border-gray-700 pt-4 w-full">KOOL FOOD</div>
+      </footer>
     </div>
   );
 }
